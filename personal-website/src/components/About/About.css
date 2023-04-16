@@ -1,0 +1,57 @@
+.About {
+    margin-top: 6rem;
+    text-align: center;
+}
+
+.row{
+    position: relative;
+}
+
+.row>:nth-child(2){
+    position: absolute;
+    top: 0;
+    transform: scale(0.75);
+    margin-left: 35%;
+}
+
+.col-12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-images>:nth-child(1){
+    transform: scale(0.9);
+    z-index: 1;
+    border-radius: 35px;
+}
+
+.a-images>:nth-child(2){
+    transform: scale(0.2);
+    border-radius: 35px;
+    z-index: 2;
+}
+.a-about{
+    margin-top: 1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 1.3rem;
+}
+.bold{
+    font-size: 2rem;
+    font-family: 'Sacramento', cursive;
+}
+
+@media screen and (max-width: 480px) {
+    .About {
+      flex-direction: column;
+      gap: 7rem;
+      height: 64rem;
+    }
+  
+    .i-right {
+      transform: scale(0.8);
+      left: -3rem;
+    }
+}
+
